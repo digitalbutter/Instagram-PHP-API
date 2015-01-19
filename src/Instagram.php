@@ -239,6 +239,16 @@ class Instagram {
   }
 
   /**
+   * Get media by its shortcode
+   *
+   * @param integer $shortcode            Instagram media shortcode
+   * @return mixed
+   */
+  public function getMediaByShortcode($shortcode) {
+    return $this->_makeCall('media/shortcode/' . $shortcode);
+  }
+
+  /**
    * Get the most popular media
    *
    * @return mixed
