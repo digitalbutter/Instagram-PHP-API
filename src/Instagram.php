@@ -487,7 +487,7 @@ class Instagram {
     }
     curl_close($ch);
 
-    return json_decode($jsonData);
+    return json_decode($jsonData, true);
   }
 
   /**
